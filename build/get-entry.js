@@ -4,7 +4,7 @@ var glob = require('glob');
 function getEntry(globPath) {
     var entries = {},
         basename, tmp, pathname;
-    console.log(glob.sync(globPath));
+    // console.log(glob.sync(globPath));
     glob.sync(globPath).forEach(function(entry) {
         basename = path.basename(entry, path.extname(entry));
         tmp = entry.split('/').splice(-3);
