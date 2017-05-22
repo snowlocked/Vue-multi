@@ -1,0 +1,119 @@
+$headerHight:50px;
+.ui-datepicker-wrapper{
+	width:240px;
+	font-size:16px;
+	color:#666;
+	box-shadow:2px 2px 8px 2px rgba(128,128,128,0.3);
+	display:none;
+	position:absolute;
+	.ui-datepicker-header{
+		padding: 0 20px;
+		height: $headerHight;
+		line-height: $headerHight;
+		text-align: center;
+		background-color: #f0f0f0;
+		border-bottom: 1px solid #ccc;
+		font-weight: bold;
+	}
+	.ui-datepicker-btn{
+		font-family: serif;
+		font-size: 20px;
+		width: 20px;
+		height: $headerHight;
+		line-height: $headerHight;
+		color: #1abc9c;
+		text-align: center;
+		cursor: pointer;
+		text-decoration: none;
+	}
+	.ui-datepicker-curr-month{
+		cursor: pointer;
+	}
+	.ui-datepicker-prev-btn{
+		float: left;
+	}
+	.ui-datepicker-next-btn{
+		float: right;
+	}
+	.ui-datepicker-body{
+		table{
+			width: 100%;
+			border-collapse:collapse;
+		}
+		th,td{
+			height: 30px;
+			text-align: center;
+		}
+		th{
+			font-size: 12px;
+			height: 40px;
+			line-height: 40px;
+		}
+		td{
+			border:1px solid #f0f0f0;
+			font-size: 10px;
+			cursor: pointer;
+			&:hover{
+				background-color:#eeee00;
+				color: #6666ff;
+			}
+		}
+		.is-chosen{
+			background-color:#333;
+			color: #fff;
+		}
+	}
+	.ui-datepicker-select-box{
+		position:absolute;
+		top:$headerHight;
+		width: 100%;
+		background-color:rgba(33,33,33,0.8);
+		display: none;
+		bottom: 0;
+		select{
+			width: 50%;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			padding: 0 20px;
+			font-size: 12px;
+			border:1px solid #666;
+			background-color:#eee;
+			-webkit-appearance: none;
+			border-radius:0px;
+			cursor: pointer;	
+		}
+		.ui-datepicker-select-year{
+			border-right:none;
+		}
+		.ui-datepicker-select-btn{
+			display: inline-block;
+			cursor: pointer;
+			width: 60px;			
+			color: #fff;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			border-radius:5px;
+			font-size: 12px;
+		}
+		.ui-datepicker-sure-select{
+			background-color: #11ef11;
+			margin-left: 30px;
+			float: left;
+		}
+		.ui-datepicker-cancel-select{
+			background-color:#ef1111;
+			margin-right: 30px;
+			float: right;
+		}
+	}
+	.ui-datepicker-show-select-box{
+		display: block;
+	}
+}
+.ui-datepicker-wrapper-show{
+	display:block;
+}

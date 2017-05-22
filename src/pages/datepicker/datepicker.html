@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>vue-multi</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="format-detection" content="telephone=no,email=no">
@@ -11,11 +11,22 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
   <meta name="keywords" content="">
   <meta equiv="Expires" content="0">
+  <style type="text/css">
+    .picker{
+      width: 230px;
+      padding: 0 4px;
+      border: 1px solid #1abc9c;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="app"></div>
-  <!-- built files will be auto injected -->
+  <div id="app">
+  	<input class="picker" type="text" v-model="day" readonly />
+  </div>
 </body>
 
 </html>
